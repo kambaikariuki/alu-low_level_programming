@@ -1,9 +1,2 @@
 #!/bin/bash
-# Passes file through preprocessor and saves output to file named 'c'
-if [ -n "$CFILE" ]; then
-  gcc -E $CFILE -o c
-  echo "Preprocessing done, output saved to 'c'"
-else
-  echo "CFILE missing"
-  echo "export CFILE='yourfile.c' then run the script again"
-fi
+gcc -E $CFILE -o c
