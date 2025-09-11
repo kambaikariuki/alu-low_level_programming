@@ -12,7 +12,7 @@ int main(void)
 {
 char alphabet = 'a', newline = '\n';
 
-for (alphabet; alphabet <= 'z'; alphabet++)
+for (; alphabet <= 'z'; alphabet++)
 {
 putchar(alphabet);
 }
