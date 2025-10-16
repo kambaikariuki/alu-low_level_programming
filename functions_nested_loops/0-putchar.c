@@ -1,22 +1,18 @@
-#include <stdio.h>
-
+#include "main.h"
 /**
-* main - Entry of program
-*
-* Description: prints _putchar followed by a new line
-*
-* Return: 0 on success
-*
-*/
+ * main - Entry point
+ * Return: Always 0 (success)
+ */
 int main(void)
 {
-char output[8] = "_putchar";
-int i = 0;
+	char *sh = "_putchar";
 
-for (i = 0; i < 8; i++)
-{
-putchar(output[i]);
-}
-putchar('\n');
-return (0);
+	while (*sh)
+	{
+		_putchar(*sh);
+		sh++;
+	}
+	_putchar('\n');
+
+	return (0);
 }
